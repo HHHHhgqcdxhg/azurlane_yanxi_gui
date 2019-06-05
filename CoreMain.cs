@@ -69,7 +69,7 @@ namespace azurlane_yanxi_wpf
                     }
                 }
 
-                label_lastRank.Dispatcher.BeginInvoke(SetRankDelegateInstance, new object[] { rank });
+                label_lastRank.Dispatcher.BeginInvoke(SetRankDelegateInstance, new object[] { newRank });
 
                 Thread.Sleep(c.checkIntervalSeconds);
                 
