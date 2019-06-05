@@ -1,0 +1,23 @@
+﻿<Window x:Class="azurlane_yanxi_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:azurlane_yanxi_wpf"
+        mc:Ignorable="d"
+        Title="演习jio本" Height="236" Width="279" Background="White" Foreground="{x:Null}">
+    <Grid Height="216" Margin="10,10,0,-21" VerticalAlignment="Top" HorizontalAlignment="Left" Width="259">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="254*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button_start" Content="开始" HorizontalAlignment="Left" Margin="4.667,33,0,0" VerticalAlignment="Top" Width="75" Click="startButtonClick" Grid.Column="1" Background="#FFDDDDDD"/>
+        <Button x:Name="button_pause" Content="停止" HorizontalAlignment="Left" Margin="84.667,33,0,0" VerticalAlignment="Top" Width="75" Click="endButtonClick" Grid.Column="1"/>
+        <!--<Button x:Name="button_restart" Content="打开配置文件" HorizontalAlignment="Left" Margin="164.667,33,0,0" VerticalAlignment="Top" Width="75" Click="restartButtonClick" Grid.Column="1"/>-->
+        <Label x:Name="label" Content="状态: " HorizontalAlignment="Left" Margin="4.667,0,0,0" VerticalAlignment="Top" Width="38" Grid.Column="1"/>
+        <Label x:Name="statusValLabel" Content="闲置中" HorizontalAlignment="Left" Margin="42.667,0,0,0" VerticalAlignment="Top" Width="197" Background="White" Foreground="Black" Grid.Column="1"/>
+        <Label x:Name="label2" Content="最近一次排名:" HorizontalAlignment="Left" Margin="10.667,60,0,0" VerticalAlignment="Top" Width="84" Grid.Column="1"/>
+        <Image x:Name="image_last" HorizontalAlignment="Left" Height="95" Margin="10.667,85,0,0" VerticalAlignment="Top" Width="222" Source="./null.png" Grid.Column="1" IsEnabled="False"/>
+        <Label x:Name="label_lastRank" Content="无" HorizontalAlignment="Left" Margin="99.667,60,0,0" VerticalAlignment="Top" Width="110" Padding="0,5,5,5" Grid.Column="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿{
+  "adbPath": "adb",
+  "cmdPath": "powershell",
+  "checkIntervalSeconds": 300,
+  "deviceName": "",
+  "tapIntervalMilliSeconds": 2000,
+  "startIntervalSeconds": 25,
+  "packageName": "com.bilibili.azurlane",
+  "mainActivityName": "com.bilibili.azurlane/com.manjuu.azurlane.MainActivity",
+  "tmpImgFileName": "azurlaneyanxitemp.png",
+  "fetchImgIntervalMilliSeconds": 500,
+  "imgSharePath": "J:\\ldmnqshare"
+}
